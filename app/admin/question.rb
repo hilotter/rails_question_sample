@@ -30,7 +30,7 @@ ActiveAdmin.register Question do
   form(:html => { :multipart => true }) do |f|
     f.inputs "Details" do
       f.input :title
-      f.input :image
+      f.input :image, :image_preview => true
       f.input :publish_datetime, as: :just_datetime_picker
       f.input :image_cache, as: :hidden
     end
